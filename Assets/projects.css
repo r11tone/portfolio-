@@ -86,6 +86,11 @@ img {
   cursor: pointer;
 }
 
-@media screen and {
-  
+@media screen and (max-width:600px) {
+  .nav-group {
+    flex-direction: column;
+    display: flex;
+    line-height: 50px;
+    align-items: center;
+  }
 }

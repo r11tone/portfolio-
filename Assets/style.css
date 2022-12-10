@@ -161,16 +161,17 @@ body {
   font-size: 45px;
   font-weight: 500;
   z-index: 7;
-  text-align: center;
   padding-top: 250px;
   color: white;
   align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  text-align: left;
 }
 
 .link1 a:hover {
   color: aqua;
-  font-size: 47px;
-
+  transition: .5s;
 }
 
 .link1 a {
@@ -191,5 +192,16 @@ body {
   .nav-group {
     flex-direction: column;
     display: flex;
+    line-height: 50px;
+    justify-content: right;
+    align-items: center;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+  .main-content {
+    font-size: 25px;
+    padding-top: 350px;
   }
 }
